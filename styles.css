@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logout{
+    width:  100vw;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.user{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+.register,.login{
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+.user-details{
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+
+input,button{
+    padding: 5px;
+margin: 5px;
+}
+button{
+    border-radius: 10%;
+    border: 1px solid black;
+
+}
+
+.flex{
+    display: flex;
+}
+
+
+.visible{
+    display: none;
+}
+
+.not-visible{
+    display:none;
+}

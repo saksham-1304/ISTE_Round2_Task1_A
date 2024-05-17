@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRUD Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 style="
+    display: flex;
+    justify-content: center;
+">User Authentication and CRUD Operations</h1>
+    <div class="logout not-visible">
+
+        <button onclick="logoutUser()">Logout</button>
+    </div>
+    <div class="user">
+        <div class="user-icon" ><i class="fa-solid fa-user "></i></div>
+        <div><button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+    </div>
+    <div class="register visible">
+        <h2>Register User</h2>
+        <input type="text" id="registerUsername" placeholder="Username">
+        <input type="password" id="registerPassword" placeholder="Password">
+        <button onclick="registerUser()">Register User</button>
+    </div>
+    <div class="login visible">
+        <h2>Login User</h2>
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button class="login-user" onclick="loginUser()">Login User</button>
+    </div>
+    <div class="user-details not-visible">
+        <h2>User Details</h2>
+        <input type="text" id="updateUsername" placeholder="New Username">
+        <input type="password" id="updatePassword" placeholder="New Password">
+        <div class="user-buttons">
+            <button onclick="updateUserDetails()">Update Details</button>
+            <button onclick="deleteUser()">Delete User</button>
+        </div>
+        <h2>Read User</h2>
+        <button onclick="readUser()">Read User</button>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/3d4a80acbf.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
